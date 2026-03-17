@@ -27,7 +27,7 @@ A Python-based CLI quiz game inspired by Kaun Banega Crorepati (KBC).
 ### Option 1 (Python file)
 
 ```bash
-python kbc_game.py
+python kaun_banega_crorepati.py
 ```
 
 ### Option 2 (Notebook)
