@@ -47,3 +47,9 @@ Run all cells in `.ipynb`
 ## 👩‍💻 Author
 
 Priyal Sagar
+
+
+-------------
+Output Screen:
+<img width="779" height="666" alt="image" src="https://github.com/user-attachments/assets/c2dba507-d122-4c4e-9d95-fbed48caa91a" />
+
