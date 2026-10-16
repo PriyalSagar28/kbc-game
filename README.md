@@ -6,11 +6,15 @@ A Python-based CLI quiz game inspired by Kaun Banega Crorepati (KBC).
 
 ## 🚀 Features
 
+* Player-name login before starting the game
 * 10 Multiple-choice questions
 * Money reward system
 * Safe levels (₹10,000 and ₹3,20,000)
 * Quit option anytime
 * Input validation
+
+The login asks for a non-empty player name. It is a name-only sign-in and does
+not create or store accounts.
 
 ---
 
@@ -52,4 +56,3 @@ Priyal Sagar
 -------------
 Output Screen:
 <img width="779" height="666" alt="image" src="https://github.com/user-attachments/assets/c2dba507-d122-4c4e-9d95-fbed48caa91a" />
-

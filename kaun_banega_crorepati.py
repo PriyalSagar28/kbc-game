@@ -9,6 +9,20 @@ Original file is located at
 
 # KBC with ques, money and safe levels, quit option
 
+def login_player():
+    print("=" * 42)
+    print("          KAUN BANEGA CROREPATI")
+    print("=" * 42)
+
+    while True:
+        player_name = input("Enter your player name to log in: ").strip()
+        if player_name:
+            return player_name
+        print("Player name cannot be empty. Please try again.")
+
+
+player_name = login_player()
+
 ques = [
 ["What is the capital of India?", "A. Mumbai", "B. Delhi", "C. Kolkata", "D. Chennai", "B"],
 ["Which language is used in Data Science most commonly?", "A. Java", "B. Python", "C. C++", "D. HTML", "B"],
@@ -26,7 +40,7 @@ money = [1000, 2000, 5000, 10000, 20000, 40000, 80000, 160000, 320000, 1000000]
 
 safe_levels = [10000, 320000]
 
-print("🎯 Welcome to KBC Game")
+print(f"\n🎯 Welcome to KBC, {player_name}!")
 print("Type A/B/C/D to answer or QUIT to exit\n")
 
 winnings = 0
@@ -45,7 +59,7 @@ for i, q in enumerate(ques):
         ans = input("Enter your answer: ").upper()
 
         if ans == "QUIT":
-            print(f"You quit with ₹{winnings}")
+            print(f"{player_name}, you quit with ₹{winnings}")
             exit()
 
         if ans not in ["A", "B", "C", "D"]:
@@ -72,5 +86,4 @@ for i, q in enumerate(ques):
 
 # 🎉 if all correct
 else:
-    print("🎉 Congratulations! You won ₹1,000,000")
-
+    print(f"🎉 Congratulations, {player_name}! You won ₹1,000,000")
